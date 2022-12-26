@@ -17,6 +17,7 @@ body {
 }
 
 .attribution {
+  color: white;
   font-size: 11px;
   text-align: center;
 }
@@ -354,4 +355,36 @@ body {
   background-color: hsl(0deg, 94%, 66%);
   padding: 15px 0;
   border-radius: 5px;
+}
+
+.footer {
+  background-color: hsl(229deg, 31%, 21%);
+  padding: 35px 0;
+  text-align: center;
+}
+.footer__container {
+  max-width: 1200px;
+}
+.footer__container .links img {
+  margin-bottom: 35px;
+}
+.footer__container .links .link-container {
+  margin-bottom: 35px;
+}
+.footer__container .links .link-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer__container .social {
+  display: flex;
+  width: 125px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

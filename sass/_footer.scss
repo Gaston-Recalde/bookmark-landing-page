@@ -1,0 +1,38 @@
+.footer{
+    background-color: $very-dark-blue;
+    padding: 35px 0;
+    text-align: center;
+
+    &__container{
+        max-width: 1200px;
+
+        .links{
+            img{
+                margin-bottom: 35px;
+            }
+
+            .link-container{
+                margin-bottom: 35px;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    color: white;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        .social{
+            display: flex;
+            width: 125px;
+            margin: 0 auto;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+    }
+}
