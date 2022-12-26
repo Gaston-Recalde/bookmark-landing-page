@@ -1,0 +1,45 @@
+.form{
+    background-color: $soft-blue;
+    // margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+
+    &__paragraph{
+        font-size: 14px;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__h3{
+        font-size: 24px;
+        width: 315px;
+        margin: 0 auto;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 84%;
+        margin: 0 auto;
+        gap: 15px;
+
+        input{
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            color: $grayish-blue;
+        }
+
+        .form-btn{
+            border: none;
+            color: white;
+            background-color: $soft-red;
+            padding: 15px 0;
+            border-radius: 5px;
+        }
+    }
+}
