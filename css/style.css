@@ -72,4 +72,56 @@ body {
 }
 .nav__buttons .btn-close {
   display: none;
+}
+
+.header {
+  margin-top: 50px;
+}
+.header__container {
+  margin: 0 auto;
+}
+.header__container .header__img {
+  width: 100%;
+}
+.header__container .header__img img {
+  width: 100%;
+}
+.header__container .header__info {
+  width: 84%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.header__container .header__info .title {
+  font-weight: 500;
+  font-size: 32px;
+  color: hsl(229deg, 31%, 21%);
+  margin-bottom: 25px;
+}
+.header__container .header__info .paragraph {
+  color: hsl(229deg, 8%, 60%);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  width: 315px;
+}
+.header__container .header__info .buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+}
+.header__container .header__info .buttons .btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(231deg, 69%, 60%);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__container .header__info .buttons .btn-secondary {
+  color: hsl(229deg, 31%, 21%);
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }/*# sourceMappingURL=style.css.map */
