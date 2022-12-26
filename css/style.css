@@ -197,4 +197,68 @@ body {
   font-size: 15px;
   line-height: 1.5;
   width: 315px;
+}
+
+.download {
+  width: 100%;
+}
+.download__container {
+  width: 84%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.download__container .title {
+  font-size: 24px;
+  color: hsl(229deg, 31%, 21%);
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.download__container .paragraph {
+  color: hsl(229deg, 8%, 60%);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 315px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.download__container .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download__container .cards .card {
+  width: 315px;
+  padding: 25px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  margin-bottom: 55px;
+}
+.download__container .cards .card .card_img {
+  margin-bottom: 35px;
+}
+.download__container .cards .card .add {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.download__container .cards .card .version {
+  color: hsl(229deg, 8%, 60%);
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.download__container .cards .card img {
+  margin-bottom: 25px;
+}
+.download__container .cards .card .card_btn {
+  width: 250px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(231deg, 69%, 60%);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
