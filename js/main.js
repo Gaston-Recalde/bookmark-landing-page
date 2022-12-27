@@ -3,17 +3,26 @@ const btnClose = document.querySelector('.btn-close');
 const navbar = document.querySelector('.nav__ul');
 const form = document.querySelector('.form');
 const email = document.querySelector('.email');
+const logo = document.querySelector('.normal');
+const logo2 = document.querySelector('.secondary');
+const social = document.querySelector('.nav__social');
 
 btnOpen.addEventListener('click', () => {
     navbar.classList.add('nav__ul-active');
     btnOpen.style.display = 'none';
     btnClose.style.display = 'inline-block';
+    logo.style.display = 'none';
+    logo2.style.display = 'inline-block';
+    social.style.display = 'flex';
 });
 
 btnClose.addEventListener('click', () => {
     navbar.classList.remove('nav__ul-active');
     btnOpen.style.display = 'inline-block';
     btnClose.style.display = 'none';
+    logo.style.display = 'inline-block';
+    logo2.style.display = 'none';
+    social.style.display = 'none';
 });
 
 form.addEventListener('submit', e => {
