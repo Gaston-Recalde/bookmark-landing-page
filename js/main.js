@@ -6,6 +6,8 @@ const email = document.querySelector('.email');
 const logo = document.querySelector('.normal');
 const logo2 = document.querySelector('.secondary');
 const social = document.querySelector('.nav__social');
+const feature_p = document.querySelectorAll('.info__p');
+const feature_data = document.querySelectorAll('.feature__article');
 
 btnOpen.addEventListener('click', () => {
     navbar.classList.add('nav__ul-active');
@@ -24,6 +26,20 @@ btnClose.addEventListener('click', () => {
     logo2.style.display = 'none';
     social.style.display = 'none';
 });
+
+feature_p.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        feature_p.forEach((item) => {
+            item.classList.remove('info__p-active');
+        });
+        feature_data.forEach((item) => {
+            item.classList.remove('feature__article-active');
+        })
+        feature_p[index].classList.add('info__p-active');
+        feature_data[index].classList.add('feature__article-active');
+    });
+});
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
