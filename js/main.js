@@ -1,11 +1,14 @@
 const btnOpen = document.querySelector('.btn-open');
 const btnClose = document.querySelector('.btn-close');
 const navbar = document.querySelector('.nav__ul');
-const form = document.querySelector('.form');
+
 const email = document.querySelector('.email');
+const form = document.querySelector('.form');
+
 const logo = document.querySelector('.normal');
 const logo2 = document.querySelector('.secondary');
 const social = document.querySelector('.nav__social');
+
 const feature_p = document.querySelectorAll('.info__p');
 const feature_data = document.querySelectorAll('.feature__article');
 // const question = document.querySelectorAll('.question');
@@ -64,13 +67,20 @@ form.addEventListener('submit', e => {
 function checkInput() {
     const emailValue = email.value.trim();
     const small = document.querySelector('.input__small');
+    const img = document.querySelector('.icon');
 
     if(emailValue === '') {
 		small.classList.add('email__error');
+        email.classList.add('input-error');
+        img.classList.add('error');
 	} else if (!isEmail(emailValue)) {
 		small.classList.add('email__error');
+        email.classList.add('input-error');
+        img.classList.add('error');
 	} else {
         small.classList.remove('email__error');
+        email.classList.remove('input-error');
+        img.classList.remove('error');
 	}
 }
 
