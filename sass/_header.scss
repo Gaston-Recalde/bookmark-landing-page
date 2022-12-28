@@ -152,24 +152,32 @@
                     // justify-content: space-between;
                     max-width: 325px;
                     margin: initial;
+
+                    .btn{
+                        border: 2px solid transparent;
+                    }
     
-                    // .btn{
-                    //     width: 150px;
-                    //     height: 50px;
-                    //     border: none;
-                    //     border-radius: 5px;
-                    //     background-color: $soft-blue;
-                    //     color: white;
-                    //     font-size: 15px;
-                    //     font-weight: 500;
-                    //     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    // }
-    
-                    // .btn-secondary{
-                    //     color: $very-dark-blue;
-                    //     background-color: transparent;
+                    .btn:hover{
+                        // width: 150px;
+                        // height: 50px;
+                        border: 2px solid $soft-blue;
+                        // border-radius: 5px;
+                        background-color: transparent;
+                        font-weight: 500;
+                        color: $soft-blue;
+                        cursor: pointer;
+                        // font-size: 15px;
+                        // font-weight: 500;
                         // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                    // }
+                    }
+    
+                    .btn-secondary:hover{
+                        border: 2px solid $very-dark-blue;
+                        font-weight: 500;
+                        color: $very-dark-blue;
+                        // background-color: transparent;
+                        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    }
                 }
             }
         }

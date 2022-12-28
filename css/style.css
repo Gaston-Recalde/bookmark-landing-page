@@ -264,6 +264,21 @@ body {
     max-width: 325px;
     margin: initial;
   }
+  .header__container .header__info .buttons .btn {
+    border: 2px solid transparent;
+  }
+  .header__container .header__info .buttons .btn:hover {
+    border: 2px solid hsl(231deg, 69%, 60%);
+    background-color: transparent;
+    font-weight: 500;
+    color: hsl(231deg, 69%, 60%);
+    cursor: pointer;
+  }
+  .header__container .header__info .buttons .btn-secondary:hover {
+    border: 2px solid hsl(229deg, 31%, 21%);
+    font-weight: 500;
+    color: hsl(229deg, 31%, 21%);
+  }
 }
 .feature {
   width: 84%;
