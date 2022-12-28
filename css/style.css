@@ -411,6 +411,9 @@ body {
   .feature__infos .info__p:last-child {
     border-bottom: none;
   }
+  .feature__infos .info__p:hover {
+    color: hsl(0deg, 94%, 66%);
+  }
   .feature__infos .info__p-active::after {
     left: 0;
     width: 100%;
@@ -442,7 +445,7 @@ body {
   }
   .feature__article-active .article__info .article-btn {
     display: inline-block;
-    border: none;
+    border: 2px solid transparent;
     background-color: hsl(231deg, 69%, 60%);
     color: white;
     border-radius: 5px;
@@ -450,6 +453,9 @@ body {
   }
   .feature__article-active .article__info .article-btn:hover {
     cursor: pointer;
+    color: hsl(231deg, 69%, 60%);
+    background-color: transparent;
+    border: 2px solid hsl(231deg, 69%, 60%);
   }
 }
 .download {
