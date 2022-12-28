@@ -96,6 +96,19 @@
             .paragraph{
                 width: 450px;
             }
+            .cards{
+                .card{
+                    .card_btn{
+                        border: 2px solid transparent;
+                    }
+                    .card_btn:hover{
+                        cursor: pointer;
+                        border: 2px solid $soft-blue;
+                        background-color: transparent;
+                        color: $soft-blue;
+                    }
+                }
+            }
         }
     }
 }

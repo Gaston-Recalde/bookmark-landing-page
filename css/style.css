@@ -534,6 +534,15 @@ body {
   .download__container .paragraph {
     width: 450px;
   }
+  .download__container .cards .card .card_btn {
+    border: 2px solid transparent;
+  }
+  .download__container .cards .card .card_btn:hover {
+    cursor: pointer;
+    border: 2px solid hsl(231deg, 69%, 60%);
+    background-color: transparent;
+    color: hsl(231deg, 69%, 60%);
+  }
 }
 @media screen and (min-width: 1200px) {
   .download__container .cards {
