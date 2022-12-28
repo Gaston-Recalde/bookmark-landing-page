@@ -35,6 +35,11 @@
             justify-content: space-around;
             align-items: center;
             margin-bottom: 50px;
+
+            i{
+                font-size: 25px;
+                color: white;
+            }
         }
     }
 }
@@ -63,6 +68,11 @@
                     margin-bottom: 0;
                     ul{
                         flex-direction: row;
+
+                        li:hover{
+                            color: $soft-red;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -72,6 +82,11 @@
                 margin-bottom: 0;
                 gap: 30px;
                 justify-content: right;
+
+                i:hover{
+                    color: $soft-red;
+                    cursor: pointer;
+                }
             }
         }
     }

@@ -776,6 +776,10 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
+.footer__container .social i {
+  font-size: 25px;
+  color: white;
+}
 
 @media screen and (min-width: 1024px) {
   .footer__container {
@@ -801,10 +805,18 @@ body {
   .footer__container .links .link-container ul {
     flex-direction: row;
   }
+  .footer__container .links .link-container ul li:hover {
+    color: hsl(0deg, 94%, 66%);
+    cursor: pointer;
+  }
   .footer__container .social {
     width: 20%;
     margin-bottom: 0;
     gap: 30px;
     justify-content: right;
+  }
+  .footer__container .social i:hover {
+    color: hsl(0deg, 94%, 66%);
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
