@@ -137,18 +137,28 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+  .nav__ul li:hover {
+    color: hsl(0deg, 94%, 66%);
+    cursor: pointer;
+  }
   .nav__ul li:nth-child(3) {
     border-bottom: none;
   }
   .nav__ul li:last-child {
     margin-top: 0;
     border-radius: 5px;
-    border: none;
+    border: 2px solid transparent;
     padding: 10px 30px;
     font-weight: 400;
     color: white;
     background-color: hsl(0deg, 94%, 66%);
     margin-right: 0;
+  }
+  .nav__ul li:last-child:hover {
+    background-color: transparent;
+    color: hsl(0deg, 94%, 66%);
+    border: 2px solid hsl(0deg, 94%, 66%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .nav__buttons {
     display: none;
