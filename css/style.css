@@ -600,10 +600,17 @@ body {
 .faq__container .question_data .ask {
   font-size: 15px;
 }
+.faq__container .question_data .ask:hover {
+  cursor: pointer;
+  color: hsl(0deg, 94%, 66%);
+}
 .faq__container .question_data i {
   font-size: 40px;
   color: hsl(231deg, 69%, 60%);
   transition: all 400ms ease-in-out;
+}
+.faq__container .question_data i:hover {
+  cursor: pointer;
 }
 .faq__container .question_data .active {
   transform: rotate(180deg);
@@ -625,9 +632,15 @@ body {
   color: white;
   font-size: 15px;
   padding: 15px 25px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.faq__btn:hover {
+  cursor: pointer;
+  border: 2px solid hsl(231deg, 69%, 60%);
+  color: hsl(231deg, 69%, 60%);
+  background-color: transparent;
 }
 
 .form2 {
