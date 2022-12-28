@@ -1,6 +1,6 @@
 .faq{
     width: 84%;
-    max-width: 992px;
+    max-width: 450px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 150px;
@@ -17,6 +17,7 @@
         font-size: 15px;
         width: 315px;
         line-height: 1.5;
+        margin: 0 auto;
         margin-bottom: 50px;
     }
 
@@ -28,11 +29,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px solid $very-dark-blue;
+            // padding: 20px 0;
+            border-bottom: 1px solid $grayish-blue;
 
             .ask{
                 font-size: 15px;
+            }
+
+            i{
+                font-size: 40px;
+                color: $soft-blue;
+                transition: all 400ms ease-in-out;
+            }
+
+            .active{
+                transform: rotate(180deg);
+                color: $soft-red;
             }
         }
 
@@ -45,6 +57,8 @@
             margin-top: 15px;
             font-size: 15px;
             text-align: left;
+            color: $grayish-blue;
+            line-height: 1.7;
         }
     }
 

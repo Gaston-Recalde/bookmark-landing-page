@@ -8,6 +8,9 @@ const logo2 = document.querySelector('.secondary');
 const social = document.querySelector('.nav__social');
 const feature_p = document.querySelectorAll('.info__p');
 const feature_data = document.querySelectorAll('.feature__article');
+// const question = document.querySelectorAll('.question');
+const arrow = document.querySelectorAll('.uil');
+const answer = document.querySelectorAll('.answer');
 
 btnOpen.addEventListener('click', () => {
     navbar.classList.add('nav__ul-active');
@@ -34,12 +37,23 @@ feature_p.forEach((item, index) => {
         });
         feature_data.forEach((item) => {
             item.classList.remove('feature__article-active');
-        })
+        });
         feature_p[index].classList.add('info__p-active');
         feature_data[index].classList.add('feature__article-active');
     });
 });
-
+arrow.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        arrow.forEach((item) => {
+            item.classList.remove('active');
+        });
+        answer.forEach((item) => {
+            item.classList.remove('answer-active');
+        });
+        arrow[index].classList.add('active');
+        answer[index].classList.add('answer-active');
+    });
+});
 
 form.addEventListener('submit', e => {
     e.preventDefault();
