@@ -453,16 +453,21 @@ body {
 .download__container .cards {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .download__container .cards .card {
   width: 315px;
+  height: 380px;
   padding: 25px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 8px;
-  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .download__container .cards .card .card_img {
   margin-bottom: 35px;
@@ -491,6 +496,36 @@ body {
   font-size: 15px;
 }
 
+@media screen and (min-width: 1024px) {
+  .download__container .title {
+    font-size: 28px;
+  }
+  .download__container .paragraph {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .download__container .cards {
+    height: 500px;
+  }
+  .download__container .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .download__container .cards .card:nth-child(1) {
+    display: flex;
+    align-self: flex-start;
+  }
+  .download__container .cards .card:nth-child(2) {
+    display: flex;
+    align-self: center;
+  }
+  .download__container .cards .card:nth-child(3) {
+    display: flex;
+    align-self: flex-end;
+  }
+}
 .faq {
   width: 84%;
   max-width: 992px;
