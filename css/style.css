@@ -732,6 +732,17 @@ body {
     right: 36%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .form2 .form .form-btn {
+    border: 2px solid transparent;
+  }
+  .form2 .form .form-btn:hover {
+    border: 2px solid hsl(0deg, 94%, 66%);
+    background-color: white;
+    color: hsl(0deg, 94%, 66%);
+    cursor: pointer;
+  }
+}
 .footer {
   background-color: hsl(229deg, 31%, 21%);
   padding: 35px 0;
