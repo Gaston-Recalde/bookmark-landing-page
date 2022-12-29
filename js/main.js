@@ -14,6 +14,17 @@ const feature_data = document.querySelectorAll('.feature__article');
 
 const question = document.querySelectorAll('.question');
 
+const closeNav = () => {
+    navbar.classList.remove('nav__ul-active');
+    btnOpen.style.display = 'inline-block';
+    btnClose.style.display = 'none';
+    logo.style.display = 'inline-block';
+    logo2.style.display = 'none';
+    social.style.display = 'none';
+}
+
+btnClose.addEventListener('click', closeNav);
+
 btnOpen.addEventListener('click', () => {
     navbar.classList.add('nav__ul-active');
     btnOpen.style.display = 'none';
@@ -23,14 +34,13 @@ btnOpen.addEventListener('click', () => {
     social.style.display = 'flex';
 });
 
-btnClose.addEventListener('click', () => {
-    navbar.classList.remove('nav__ul-active');
-    btnOpen.style.display = 'inline-block';
-    btnClose.style.display = 'none';
-    logo.style.display = 'inline-block';
-    logo2.style.display = 'none';
-    social.style.display = 'none';
-});
+if(window.innerWidth < 1024){
+    document.querySelectorAll('.nav__ul li').forEach(navItems => {
+        navItems.addEventListener('click', () => {
+            closeNav();
+        });
+    });
+};
 
 feature_p.forEach((item, index) => {
     item.addEventListener('click', () => {
