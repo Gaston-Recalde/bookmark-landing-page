@@ -56,7 +56,7 @@
                 .btn{
                     width: 150px;
                     height: 50px;
-                    border: none;
+                    border: 2px solid transparent;
                     border-radius: 5px;
                     background-color: $soft-blue;
                     color: white;
@@ -68,6 +68,20 @@
                 .btn-secondary{
                     color: $very-dark-blue;
                     background-color: transparent;
+                }
+
+                .btn:hover{
+                    border: 2px solid $soft-blue;
+                    background-color: transparent;
+                    font-weight: 500;
+                    color: $soft-blue;
+                    cursor: pointer;
+                }
+
+                .btn-secondary:hover{
+                    border: 2px solid $very-dark-blue;
+                    font-weight: 500;
+                    color: $very-dark-blue;
                 }
             }
         }
@@ -113,24 +127,6 @@
                 .buttons{
                     max-width: 325px;
                     margin: initial;
-
-                    .btn{
-                        border: 2px solid transparent;
-                    }
-    
-                    .btn:hover{
-                        border: 2px solid $soft-blue;
-                        background-color: transparent;
-                        font-weight: 500;
-                        color: $soft-blue;
-                        cursor: pointer;
-                    }
-    
-                    .btn-secondary:hover{
-                        border: 2px solid $very-dark-blue;
-                        font-weight: 500;
-                        color: $very-dark-blue;
-                    }
                 }
             }
         }

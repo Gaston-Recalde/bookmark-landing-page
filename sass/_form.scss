@@ -81,6 +81,17 @@
             padding: 15px 0;
             border-radius: 5px;
         }
+
+        .form-btn{
+            border: 2px solid transparent;
+
+            &:hover{
+                border: 2px solid $soft-red;
+                background-color: white;
+                color: $soft-red;
+                cursor: pointer;
+            }
+        }
     }
 }
 
@@ -114,23 +125,6 @@
 
             .error{
                 right: 36%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .form2{
-        .form{
-            .form-btn{
-                border: 2px solid transparent;
-
-                &:hover{
-                    border: 2px solid $soft-red;
-                    background-color: white;
-                    color: $soft-red;
-                    cursor: pointer;
-                }
             }
         }
     }

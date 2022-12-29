@@ -65,11 +65,18 @@
                     width: 250px;
                     height: 50px;
                     border-radius: 8px;
-                    border: none;
+                    border: 2px solid transparent;
                     background-color: $soft-blue;
                     color: white;
                     font-weight: 500;
                     font-size: 15px;
+                }
+
+                .card_btn:hover{
+                    cursor: pointer;
+                    border: 2px solid $soft-blue;
+                    background-color: transparent;
+                    color: $soft-blue;
                 }
 
             }
@@ -85,19 +92,6 @@
             }
             .paragraph{
                 width: 450px;
-            }
-            .cards{
-                .card{
-                    .card_btn{
-                        border: 2px solid transparent;
-                    }
-                    .card_btn:hover{
-                        cursor: pointer;
-                        border: 2px solid $soft-blue;
-                        background-color: transparent;
-                        color: $soft-blue;
-                    }
-                }
             }
         }
     }
